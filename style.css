@@ -37,7 +37,7 @@ body {
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: var(--barva-pozadi);
     box-shadow: 0 0 20px var(--barva-stin);
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .logo {
@@ -46,6 +46,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    box-shadow: 0 0 20px var(--barva-stin);
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    background-color: white;
 }
 
 a {
@@ -86,6 +89,7 @@ h1, h2, h3 {
     color: var(--barva-pozadi);
     text-align: center;
     box-shadow: 0 0 20px var(--barva-stin);
+        margin: 1rem -1.5rem 0 -1.5rem;
 }
 
 .paticka p {
