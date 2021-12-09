@@ -59,7 +59,7 @@ a {
 
 .navigace a {
     text-align: center;
-    padding: 0.4rem 0;
+    padding: 0.4rem 0.6rem;
     color: var(--barva-dekorace);
 }
 
@@ -107,7 +107,7 @@ h1, h2, h3 {
     color: var(--barva-pozadi);
     text-align: center;
     box-shadow: 0 0 20px var(--barva-stin);
-        margin: 1rem -1.5rem 0 -1.5rem;
+    margin: 1rem -1.5rem 0 -1.5rem;
 }
 
 .paticka p {
@@ -115,23 +115,113 @@ h1, h2, h3 {
     margin: 0;
 }
 
+h2 {
+    position: relative;
+    padding: 2rem 0 1rem 0;
+}
+h2::after {
+    content:"";
+    width: 100px;
+    border-bottom: 1.6px solid var(--barva-dekorace);
+    display: inline-block;
+    position: absolute;
+    left: -4.5rem; 
+    bottom: 0;
+}
 
-@media screen and (min-width: 420px)
+.terapie-foto-text {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.terapie-foto {
+    margin-left: 3rem;
+    margin-right: -4rem;
+    }
+/*
+    vyresit obtekani textu!!!
+    */
+
+    
+@media screen and (min-width:
+ 420px)
 {.uvod {
     min-height: 300px;
-}
+    margin: 1rem -2.5rem 1rem -2.5rem;
 }
 
+body {
+    font-size: 1rem;
+}
+
+.obal {
+    padding: 1rem 2.5rem 0 2.5rem;
+}
+
+.logo {
+    min-height: 160px;
+    margin: -1.5rem -2.5rem 1rem -2.5rem;
+}
+.paticka {
+    margin: 1rem -2.5rem 0 -2.5rem;
+}
+
+.uvod p,
+.uvod h1 {
+    padding: 1rem 2.5rem 0 2.5rem;
+}
+
+.uvod h1 {
+    font-size: 1.8rem; 
+}
+}
 
 
 @media screen and (min-width: 680px)
 {.uvod {
     min-height: 400px;
 }
+
+.uvod p {
+    font-size: 1.2rem; 
 }
 
-@media screen and (min-width: 900px)
+.uvod h1 {
+    font-size: 2rem; 
+}
+
+}
+
+@media screen and (min-width: 800px)
 {.uvod {
     min-height: 500px;
+    margin: 1rem -4.5rem 1rem -4.5rem;
 }
+
+
+.obal {
+    padding: 1rem 4.5rem 0 4.5rem;
+}
+
+.logo {
+    min-height: 180px;
+    margin: -1.5rem -4.5rem 1rem -4.5rem;
+}
+.paticka {
+    margin: 1rem -4.5rem 0 -4.5rem;
+}
+
+.uvod p,
+.uvod h1 {
+    padding: 1rem 4.5rem 0 4.5rem;
+}
+
+.uvod p {
+    font-size: 1.5rem; 
+}
+
+.uvod h1 {
+    font-size: 2.5rem; 
+}
+
 }
