@@ -37,7 +37,30 @@ body {
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: var(--barva-pozadi);
     box-shadow: 0 0 20px var(--barva-stin);
-    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+
+.obal p,
+.obal a { 
+    padding: 0 1.5rem 0 1.5rem;
+    margin: 0;
+}
+
+.obal h2 {
+    position: relative;
+    padding: 2rem 1.5rem 0.8rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.obal h3 {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0
+}
+
+#kontakt h2 {
+    margin-bottom: 0;
 }
 
 .logo {
@@ -47,7 +70,7 @@ body {
     background-position: center;
     background-size: contain;
     box-shadow: 0 0 20px var(--barva-stin);
-    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    margin: -0.5rem -1.5rem 1rem -1.5rem;
     background-color: white;
 }
 
@@ -64,7 +87,7 @@ a {
 }
 
 .navigace {
-    padding: 0.5rem 0;
+    padding: 0 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -80,7 +103,7 @@ a {
 
 .uvod {
     min-height: 180px;
-    background-image: url(obr/Andulka_9110_orez_rouge.jpg);
+    background-image: url(obr/Andulka_9110_orez_2_zmensene.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -91,7 +114,7 @@ a {
 
 .uvod p,
 .uvod h1 {
-    padding: 1rem 1.5rem 0 1.5rem;
+    padding: 1rem 3rem 0 3rem;
     color: var(--barva-pozadi);
     text-shadow: 1px 1px var(--barva-stin);
 }
@@ -115,32 +138,24 @@ h1, h2, h3 {
     margin: 0;
 }
 
-h2 {
-    position: relative;
-    padding: 2rem 0 1rem 0;
-}
+
+
 h2::after {
     content:"";
-    width: 100px;
+    width: 50px;
     border-bottom: 1.6px solid var(--barva-dekorace);
     display: inline-block;
     position: absolute;
-    left: -4.5rem; 
+    left: 0; 
     bottom: 0;
 }
 
-.terapie-foto-text {
-display: flex;
-flex-direction: row-reverse;
+.terapie-foto {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
-.terapie-foto {
-    margin-left: 3rem;
-    margin-right: -4rem;
-    }
-/*
-    vyresit obtekani textu!!!
-    */
+
 
     
 @media screen and (min-width:
@@ -154,7 +169,9 @@ body {
     font-size: 1rem;
 }
 
-.obal {
+.obal p, 
+.obal h2,
+.obal h3 {
     padding: 1rem 2.5rem 0 2.5rem;
 }
 
@@ -180,35 +197,52 @@ body {
 @media screen and (min-width: 680px)
 {.uvod {
     min-height: 400px;
-}
+    }
 
 .uvod p {
     font-size: 1.2rem; 
-}
+    }
 
 .uvod h1 {
     font-size: 2rem; 
-}
+    }
 
+        /*
+.terapie-foto-text {
+    display: flex;
+    flex-direction: row-reverse;
+    }
+    
+
+.terapie-foto {
+    margin-left: 3rem;
+    margin-right: -4.5rem;
+    }
+
+
+    vyresit obtekani textu!!!
+    */
 }
 
 @media screen and (min-width: 800px)
 {.uvod {
     min-height: 500px;
-    margin: 1rem -4.5rem 1rem -4.5rem;
+    margin: 1rem 0 1rem -0;
 }
 
 
-.obal {
+.obal p, 
+.obal h2,
+.obal h3 {
     padding: 1rem 4.5rem 0 4.5rem;
 }
 
 .logo {
     min-height: 180px;
-    margin: -1.5rem -4.5rem 1rem -4.5rem;
+    margin: 0 0 1rem 0;
 }
 .paticka {
-    margin: 1rem -4.5rem 0 -4.5rem;
+    margin: 1rem 0 0 0;
 }
 
 .uvod p,
