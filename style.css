@@ -53,7 +53,6 @@ body {
 }
 
 
-
 .obal h3 {
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     margin: 0
@@ -70,7 +69,6 @@ body {
     background-position: center;
     background-size: contain;
     box-shadow: 0 0 20px var(--barva-stin);
-    margin: -0.5rem -1.5rem 1rem -1.5rem;
     background-color: white;
 }
 
@@ -107,14 +105,13 @@ a {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    margin: 1rem -1.5rem 1rem -1.5rem;
     display: flex;
     flex-direction: column-reverse;
 }
 
 .uvod p,
 .uvod h1 {
-    padding: 1rem 3rem 0 3rem;
+    padding: 1rem 1.5rem 0 1.5rem;
     color: var(--barva-pozadi);
     text-shadow: 1px 1px var(--barva-stin);
 }
@@ -138,8 +135,6 @@ h1, h2, h3 {
     margin: 0;
 }
 
-
-
 h2::after {
     content:"";
     width: 50px;
@@ -152,50 +147,45 @@ h2::after {
 
 .terapie-foto {
     width: 100%;
-    margin: 0.5rem 0 0.5rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
-
-
 
     
 @media screen and (min-width:
  420px)
-{.uvod {
-    min-height: 300px;
-    margin: 1rem -2.5rem 1rem -2.5rem;
-}
+{
 
 body {
-    font-size: 1rem;
+        font-size: 1rem;
 }
 
-.obal p, 
+.uvod {
+    min-height: 300px;
+}
+
+.obal h1,
 .obal h2,
-.obal h3 {
-    padding: 1rem 2.5rem 0 2.5rem;
+.obal h3,
+.obal p,
+.kapitola a {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem
 }
 
-.logo {
-    min-height: 160px;
-    margin: -1.5rem -2.5rem 1rem -2.5rem;
-}
-.paticka {
-    margin: 1rem -2.5rem 0 -2.5rem;
+.navigace {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem
 }
 
-.uvod p,
-.uvod h1 {
-    padding: 1rem 2.5rem 0 2.5rem;
-}
-
-.uvod h1 {
-    font-size: 1.8rem; 
+h2::after {
+    width: 70px;
 }
 }
-
 
 @media screen and (min-width: 680px)
-{.uvod {
+{
+.uvod {
     min-height: 400px;
     }
 
@@ -206,6 +196,7 @@ body {
 .uvod h1 {
     font-size: 2rem; 
     }
+
 
         /*
 .terapie-foto-text {
@@ -227,27 +218,25 @@ body {
 @media screen and (min-width: 800px)
 {.uvod {
     min-height: 500px;
-    margin: 1rem 0 1rem -0;
+    margin: 0.5rem 0 1rem 0;
 }
 
 
-.obal p, 
+.obal h1,
 .obal h2,
-.obal h3 {
-    padding: 1rem 4.5rem 0 4.5rem;
+.obal h3,
+.obal p,
+.kapitola a {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem
 }
 
 .logo {
     min-height: 180px;
-    margin: 0 0 1rem 0;
+    margin-bottom: 0.5rem;
 }
 .paticka {
     margin: 1rem 0 0 0;
-}
-
-.uvod p,
-.uvod h1 {
-    padding: 1rem 4.5rem 0 4.5rem;
 }
 
 .uvod p {
@@ -256,6 +245,15 @@ body {
 
 .uvod h1 {
     font-size: 2.5rem; 
+}
+
+.navigace {
+    padding-left: 4rem;
+    padding-right: 4rem
+}
+
+h2::after {
+    width: 100px;
 }
 
 }
