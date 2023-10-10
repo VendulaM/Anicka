@@ -1,6 +1,13 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -32,24 +39,28 @@ body {
     color: var(--barva-pismo);
 }
 
+
 .obal {
     max-width: 1200px;
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
     background: var(--barva-pozadi);
     box-shadow: 0 0 20px var(--barva-stin);
 }
 
 
-.obal p,
-.obal a { 
-    padding: 0 1.5rem 0 1.5rem;
+.obal p {
+    padding-top: 1rem;
+    padding-bottom: 0;
     margin: 0;
 }
+
 
 .obal h2 {
     position: relative;
     padding: 2rem 1.5rem 0.8rem 1.5rem;
     margin-bottom: 1rem;
+    margin-top: 12rem;
 }
 
 
@@ -57,6 +68,39 @@ body {
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     margin: 0
 }
+
+#cenik ul {
+    list-style: none;
+    padding-left: 4.5rem;
+}
+
+#cenik li {
+    padding-top: 2rem;
+    margin: 0
+}
+
+.obal .odsazene {
+    padding-left: 15%;
+    padding-right: 5%;
+}
+
+.obal .odsazene h4 {
+    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    margin: 0;
+}
+
+.obal .odsazene ul {
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.obal .odsazene p {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+
 
 #kontakt h2 {
     margin-bottom: 0;
@@ -99,6 +143,7 @@ a {
     text-shadow: 2px 2px 5px var(--barva-stin);
 }
 
+
 .uvod {
     min-height: 180px;
     background-image: url(obr/Andulka_9110_orez_2_zmensene.jpg);
@@ -116,11 +161,15 @@ a {
     text-shadow: 1px 1px var(--barva-stin);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--barva-nadpis);
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
 }
+
 
 .paticka {
     background-color: var(--barva-nadpis);
@@ -136,12 +185,12 @@ h1, h2, h3 {
 }
 
 h2::after {
-    content:"";
+    content: "";
     width: 50px;
     border-bottom: 1.6px solid var(--barva-dekorace);
     display: inline-block;
     position: absolute;
-    left: 0; 
+    left: 0;
     bottom: 0;
 }
 
@@ -151,54 +200,51 @@ h2::after {
     margin-bottom: 0.5rem;
 }
 
-    
-@media screen and (min-width:
- 420px)
-{
 
-body {
+@media screen and (min-width: 420px) {
+
+    body {
         font-size: 1rem;
-}
-
-.uvod {
-    min-height: 300px;
-}
-
-.obal h1,
-.obal h2,
-.obal h3,
-.obal p,
-.kapitola a {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem
-}
-
-.navigace {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem
-}
-
-h2::after {
-    width: 70px;
-}
-}
-
-@media screen and (min-width: 680px)
-{
-.uvod {
-    min-height: 400px;
     }
 
-.uvod p {
-    font-size: 1.2rem; 
+    .uvod {
+        min-height: 300px;
     }
 
-.uvod h1 {
-    font-size: 2rem; 
+    .obal h1,
+    .obal h2,
+    .obal h3,
+    .obal p,
+    .kapitola a {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem
+    }
+
+    .navigace {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem
+    }
+
+    h2::after {
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .uvod {
+        min-height: 400px;
+    }
+
+    .uvod p {
+        font-size: 1.2rem;
+    }
+
+    .uvod h1 {
+        font-size: 2rem;
     }
 
 
-        /*
+    /*
 .terapie-foto-text {
     display: flex;
     flex-direction: row-reverse;
@@ -215,45 +261,45 @@ h2::after {
     */
 }
 
-@media screen and (min-width: 800px)
-{.uvod {
-    min-height: 500px;
-    margin: 0.5rem 0 1rem 0;
-}
+@media screen and (min-width: 800px) {
+    .uvod {
+        min-height: 500px;
+        margin: 0.5rem 0 1rem 0;
+    }
 
+    .obal h1,
+    .obal h2,
+    .obal h3,
+    .obal p,
+    .kapitola a {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem
+    }
 
-.obal h1,
-.obal h2,
-.obal h3,
-.obal p,
-.kapitola a {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem
-}
+    .logo {
+        min-height: 180px;
+        margin-bottom: 0.5rem;
+    }
 
-.logo {
-    min-height: 180px;
-    margin-bottom: 0.5rem;
-}
-.paticka {
-    margin: 2rem 0 0 0;
-}
+    .paticka {
+        margin: 2rem 0 0 0;
+    }
 
-.uvod p {
-    font-size: 1.5rem; 
-}
+    .uvod p {
+        font-size: 1.5rem;
+    }
 
-.uvod h1 {
-    font-size: 2.5rem; 
-}
+    .uvod h1 {
+        font-size: 2.5rem;
+    }
 
-.navigace {
-    padding-left: 4rem;
-    padding-right: 4rem
-}
+    .navigace {
+        padding-left: 4rem;
+        padding-right: 4rem
+    }
 
-h2::after {
-    width: 100px;
-}
+    h2::after {
+        width: 100px;
+    }
 
 }
